@@ -1,193 +1,1004 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="JCM, cabinet juridique à Madagascar : droit des affaires, droit foncier, droit social, conseil fiscal, formalités et visas. Demandez un devis.">
-  <meta name="theme-color" content="#a7192d">
-  <title>JCM | Cabinet juridique à Madagascar</title>
+  <meta name="description"
+    content="JCM - Cabinet Juridique à Madagascar : Droit des affaires, droit foncier, droit social, fiscalité, et démarches de visas. Sécurisez vos investissements et votre entreprise.">
+  <meta name="theme-color" content="#0e2a47">
+  <title>JCM | Cabinet Juridique & Conseil aux Entreprises à Madagascar</title>
+
+  <!-- Police Poppins Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- ==========================================================================
+       Barre Supérieure (Topbar)
+       ========================================================================== -->
   <div class="topbar">
-    <div class="container topbar-inner">
-      <span>Votre partenaire juridique à Madagascar</span>
-      <div class="top-contacts">
-        <a href="tel:+261349305861">034 93 058 61</a>
-        <span class="top-separator">|</span>
-        <a href="mailto:contact@jcm.mg">contact@test.mg</a>
+    <div class="container topbar-content">
+      <div class="topbar-left">
+        <span class="topbar-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Cabinet Agréé
+        </span>
+        <span>Votre partenaire juridique stratégique à Madagascar</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+261349305861">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          034 93 058 61
+        </a>
+        <span class="topbar-separator">|</span>
+        <a href="mailto:contact@jcm.mg">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          contact@jcm.mg
+        </a>
+        <span class="topbar-separator">|</span>
+        <span>Antananarivo, Madagascar</span>
       </div>
     </div>
   </div>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#accueil" aria-label="JCM, accueil">
-        <span class="brand-mark">JCM</span>
-        <span class="brand-text"><strong>JCM</strong><small>CABINET JURIDIQUE</small></span>
+  <!-- ==========================================================================
+       En-tête & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a class="brand-wrapper" href="#accueil" aria-label="Accueil JCM">
+        <div class="brand-symbol">JCM</div>
+        <div class="brand-info">
+          <span class="brand-title">JCM</span>
+          <span class="brand-subtitle">Cabinet Juridique</span>
+        </div>
       </a>
-      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-      <nav class="nav-links" id="navLinks">
-        <a href="#accueil">Accueil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#services">Nos services</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="#devis">Demander un devis</a>
+
+      <nav class="main-nav" id="mainNav">
+        <a class="nav-link" href="#accueil">Accueil</a>
+        <a class="nav-link" href="#apropos">À Propos</a>
+        <a class="nav-link" href="#services">Expertises</a>
+        <a class="nav-link" href="#methode">Méthodologie</a>
+        <a class="nav-link" href="#faq">FAQ</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="#devis">
+          <span>Demander un devis</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
       </nav>
+
+      <button class="mobile-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
     </div>
+    <div class="mobile-nav-backdrop" id="navBackdrop"></div>
   </header>
 
   <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
     <section class="hero" id="accueil">
-      <div class="hero-shape"></div>
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> CONSEIL • ACCOMPAGNEMENT • SÉCURITÉ JURIDIQUE</p>
-          <h1>Donnez à vos projets<br><em>un cadre juridique solide.</em></h1>
-          <p class="hero-lead">JCM accompagne les entreprises qui souhaitent investir à Madagascar et contribuer à son développement économique.</p>
-          <div class="hero-actions">
-            <a class="button button-light" href="#services">Découvrir nos services</a>
-            <a class="button button-outline" href="#devis">Demander un devis <span>↗</span></a>
+        <div class="hero-content">
+          <div class="badge-pill badge-pill-light">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            Conseil • Accompagnement • Sécurité Juridique
           </div>
-          <div class="hero-note"><span class="check">✓</span> Un accompagnement adapté aux besoins de votre activité</div>
-        </div>
-        <div class="hero-visual">
-          <div class="visual-ring"></div>
-          <img src="assets/logo-juriste-conseil-mada.png" alt="Logo Juriste Conseil Mada" class="hero-logo">
-          <div class="floating-card"><span class="card-icon">§</span><span><strong>Votre partenaire</strong><small>juridique à Madagascar</small></span></div>
-        </div>
-      </div>
-      <div class="hero-bottom"></div>
-    </section>
 
-    <section class="trust-strip" aria-label="Domaines d'accompagnement">
-      <div class="container trust-grid">
-        <div><span class="trust-icon">⌂</span><span><strong>Droit des affaires</strong><small>Vie des entreprises</small></span></div>
-        <div><span class="trust-icon">⌖</span><span><strong>Droit foncier</strong><small>Biens immobiliers</small></span></div>
-        <div><span class="trust-icon">▤</span><span><strong>Droit social</strong><small>Gestion RH</small></span></div>
-        <div><span class="trust-icon">✓</span><span><strong>Conseil fiscal</strong><small>Choix et orientation</small></span></div>
-      </div>
-    </section>
+          <h1 class="serif-font">
+            Donnez à vos projets<br>
+            <em>un cadre juridique d'excellence.</em>
+          </h1>
 
-    <section class="section about" id="apropos">
-      <div class="container about-grid">
-        <div class="section-label"><span>01</span><i></i> À PROPOS DE JCM</div>
-        <div class="about-content">
-          <h2>Un accompagnement juridique pensé pour <em>faire avancer vos projets.</em></h2>
-          <p>JCM est un cabinet juridique qui accompagne les entreprises souhaitant s’implanter, investir et développer leurs activités à Madagascar. Notre objectif est de vous aider à mieux comprendre vos obligations, à sécuriser vos démarches et à avancer avec davantage de sérénité.</p>
-          <a class="text-link" href="#contact">Parlons de votre projet <span>→</span></a>
-        </div>
-      </div>
-    </section>
+          <p class="hero-description">
+            JCM accompagne les investisseurs, dirigeants et porteurs de projets dans la sécurisation juridique, foncière
+            et fiscale de leurs activités à Madagascar.
+          </p>
 
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section-label"><span>02</span><i></i> NOS DOMAINES D’INTERVENTION</div>
-        <div class="section-heading">
-          <h2>Des solutions juridiques<br><em>pour chaque étape.</em></h2>
-          <p>Découvrez nos principaux domaines d’accompagnement pour les entreprises et les porteurs de projets.</p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card featured">
-            <div class="service-number">01</div><div class="service-icon">⚖</div>
-            <h3>Droit des affaires</h3>
-            <p>Accompagnement juridique pour la création, l’évolution et les difficultés de votre entreprise.</p>
-            <ul>
-              <li>Création de sociétés : EI, SARL, SARLU, SCI</li>
-              <li>Domiciliation d’entreprise</li>
-              <li>Cession de parts sociales</li>
-              <li>Entreprises en difficulté</li>
-              <li>Dissolution et redressement judiciaire</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <div class="service-number">02</div><div class="service-icon">⌂</div>
-            <h3>Droit foncier</h3>
-            <p>Accompagnement dans vos opérations immobilières.</p>
-            <ul>
-              <li>Achat et vente de biens immobiliers</li>
-              <li>Baux d’immeubles</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <div class="service-number">03</div><div class="service-icon">▤</div>
-            <h3>Droit social & RH</h3>
-            <p>Un appui pour vos enjeux sociaux et la gestion de vos ressources humaines.</p>
-            <ul>
-              <li>Conseil en droit social</li>
-              <li>Accompagnement en gestion RH</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <div class="service-number">04</div><div class="service-icon">◈</div>
-            <h3>Droit fiscal</h3>
-            <p>Une orientation pour mieux appréhender les obligations fiscales de votre activité.</p>
-            <ul>
-              <li>Conseil sur le régime fiscal adapté</li>
-            </ul>
-          </article>
-          <article class="service-card service-card-wide">
-            <div class="service-number">05</div><div class="service-icon">✈</div>
-            <div><h3>Autres services</h3><p>Assistance et orientation pour vos démarches de visa.</p><ul><li>Accompagnement dans les démarches liées aux visas</li></ul></div>
-          </article>
-        </div>
-        <div class="services-bottom"><span>Un besoin spécifique ?</span><p>Présentez-nous votre situation : nous vous orienterons vers l’accompagnement approprié.</p><a class="button button-red" href="#devis">Parler de mon besoin <span>→</span></a></div>
-      </div>
-    </section>
+          <div class="hero-actions">
+            <a class="btn btn-white btn-lg" href="#devis">
+              <span>Demander un devis gratuit</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a class="btn btn-outline-white btn-lg" href="#services">
+              <span>Découvrir nos services</span>
+            </a>
+          </div>
 
-    <section class="cta-band">
-      <div class="container cta-inner">
-        <div><p class="eyebrow eyebrow-light">VOTRE PROJET COMMENCE ICI</p><h2>Besoin d’un accompagnement juridique ?</h2><p>Contactez JCM pour présenter votre projet et demander un devis.</p></div>
-        <a class="button button-light" href="#devis">Demander un devis <span>↗</span></a>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="section-label"><span>03</span><i></i> CONTACTEZ-NOUS</div>
-        <div class="contact-grid">
-          <div class="contact-copy">
-            <h2>Parlons de votre <em>projet.</em></h2>
-            <p>Pour une demande d’information ou un devis, contactez-nous par téléphone, WhatsApp ou e-mail.</p>
-            <div class="contact-item"><span class="contact-icon">☎</span><div><small>TÉLÉPHONE / WHATSAPP</small><a href="https://wa.me/261349305861">034 93 058 61</a><a href="https://wa.me/261383060058">038 30 600 58</a></div></div>
-            <div class="contact-item"><span class="contact-icon">✉</span><div><small>E-MAIL</small><a href="mailto:contact@jcm.mg">contact@jcm.mg</a></div></div>
-            <div class="contact-item"><span class="contact-icon">⌖</span><div><small>ADRESSE</small><p>IVY 188 Bis, Ampangabe Anosipatrana<br>Madagascar</p></div></div>
-            <div class="social-links">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
-              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <div class="hero-reassurance">
+            <div class="reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span>Conformité légale 100% garantie</span>
+            </div>
+            <div class="reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+              <span>Réponse sous 24h ouvrées</span>
+            </div>
+            <div class="reassurance-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Confidentialité totale</span>
             </div>
           </div>
-          <form class="quote-form" id="devis">
-            <p class="form-kicker">DEMANDE DE DEVIS</p>
-            <h3>Décrivez-nous votre besoin</h3>
-            <p class="form-intro">Remplissez les champs ci-dessous. Votre application e-mail s’ouvrira avec votre demande prête à être envoyée.</p>
-            <label for="name">Nom et prénom *</label><input id="name" name="name" type="text" placeholder="Votre nom" required>
-            <label for="email">Adresse e-mail *</label><input id="email" name="email" type="email" placeholder="vous@exemple.com" required>
-            <label for="service">Service concerné *</label>
-            <select id="service" name="service" required>
-              <option value="">Choisissez un domaine</option><option>Droit des affaires</option><option>Droit foncier</option><option>Droit social / Gestion RH</option><option>Droit fiscal</option><option>Visas</option><option>Autre demande</option>
-            </select>
-            <label for="message">Votre demande *</label><textarea id="message" name="message" rows="4" placeholder="Présentez brièvement votre projet..." required></textarea>
-            <button class="button button-red submit-button" type="submit">Préparer ma demande <span>→</span></button>
-            <p class="privacy-note">Les informations saisies serviront à préparer votre demande de contact.</p>
-            <p class="form-feedback" id="formFeedback" role="status"></p>
-          </form>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <div class="hero-logo-frame">
+              <img src="assets/logo-juriste-conseil-mada.png" alt="Juriste Conseil Mada Logo" class="hero-logo-img">
+            </div>
+            <p style="font-size: 13px; font-weight: 600; color: #f1d5db; letter-spacing: 0.04em;">
+              CABINET JURIDIQUE DE RÉFÉRENCE
+            </p>
+            <div class="hero-card-stats">
+              <div class="stat-box">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Dossiers traités</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Clients satisfaits</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Bandeau de Confiance (Trust Strip)
+         ========================================================================== -->
+    <section class="trust-strip">
+      <div class="container trust-flex">
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="trust-title">Droit des Affaires</div>
+            <div class="trust-desc">Création & Vie d'entreprise</div>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="trust-title">Droit Foncier</div>
+            <div class="trust-desc">Sécurisation des biens & baux</div>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="trust-title">Droit Social & RH</div>
+            <div class="trust-desc">Relations de travail saines</div>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="trust-title">Conseil Fiscal</div>
+            <div class="trust-desc">Optimisation & Régularité</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         À Propos
+         ========================================================================== -->
+    <section class="section" id="apropos">
+      <div class="container about-grid">
+        <div>
+          <div class="badge-pill badge-pill-primary" style="margin-bottom: 16px;">
+            Cabinet Juridique JCM
+          </div>
+          <h2 class="serif-font">
+            Une expertise juridique agile pour <span class="text-primary">faire avancer vos projets.</span>
+          </h2>
+          <p style="color: var(--text-muted); font-size: 16px; margin: 20px 0;">
+            Implanter une activité, acquérir un terrain ou embaucher du personnel à Madagascar nécessite une parfaite
+            maîtrise des textes réglementaires en vigueur. JCM vous apporte l'éclairage nécessaire pour transformer la
+            conformité en avantage concurrentiel.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <div class="highlight-text">
+                <h4>Sécurisation intégrale de vos démarches</h4>
+                <p>Rédaction rigoureuse des statuts, contrats et actes officiels sans vide juridique.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div class="highlight-text">
+                <h4>Rapidité d'exécution</h4>
+                <p>Délais optimisés auprès des administrations locales (EDBM, Domaines, Fiscalité).</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="highlight-text">
+                <h4>Transparence & Proximité</h4>
+                <p>Un interlocuteur dédié qui vous informe en temps réel de chaque étape.</p>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn btn-primary" href="#contact">
+            <span>Échanger avec un conseiller</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="about-preview-box">
+          <p class="about-quote serif-font">
+            « Notre vocation est de donner à chaque dirigeant et investisseur la sérénité nécessaire pour entreprendre
+            durablement à Madagascar, dans le strict respect des lois. »
+          </p>
+          <div class="about-author">
+            <div class="author-avatar">JC</div>
+            <div>
+              <div style="font-weight: 700; color: var(--dark);">Direction JCM</div>
+              <div style="font-size: 13px; color: var(--text-muted);">Juriste Conseil Mada</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Domaines d'Intervention / Services
+         ========================================================================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill badge-pill-primary" style="margin-bottom: 12px;">Nos Expertises</div>
+          <h2 class="serif-font">Des solutions juridiques adaptées à chaque étape</h2>
+          <p>Une palette complète de compétences juridiques dédiées à la croissance et à la protection de vos intérêts.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <article class="service-card featured">
+            <div class="service-card-top">
+              <div class="service-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M16 12l-4-4-4 4M12 16V8"></path>
+                </svg>
+              </div>
+              <span class="service-card-number">01</span>
+            </div>
+            <h3>Droit des Affaires & Sociétés</h3>
+            <p>Accompagnement intégral pour la constitution, le développement et la restructuration d'entreprises.</p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Création de sociétés : SARL, SARLU, EI, SA, SCI
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Domiciliation d'entreprise & siège social
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Cession de parts sociales & modifications statutaires
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Entreprises en difficulté & redressement judiciaire
+              </li>
+            </ul>
+            <div class="service-footer-cta">
+              <a class="btn btn-outline-dark btn-sm" href="#devis">Consulter pour ce service</a>
+            </div>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                </svg>
+              </div>
+              <span class="service-card-number">02</span>
+            </div>
+            <h3>Droit Foncier & Immobilier</h3>
+            <p>Sécurisez chaque transaction immobilière et évitez les pièges de litiges fonciers à Madagascar.</p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Vérification et purge des titres fonciers
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Achat, vente & baux commerciaux / habitation
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Assistance aux démarches cadastrales
+              </li>
+            </ul>
+            <div class="service-footer-cta">
+              <a class="btn btn-outline-dark btn-sm" href="#devis">Consulter pour ce service</a>
+            </div>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="11" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <span class="service-card-number">03</span>
+            </div>
+            <h3>Droit Social & Gestion RH</h3>
+            <p>Conformité au Code du Travail malgache pour prévenir les litiges prud'homaux et motiver vos équipes.</p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Rédaction de contrats de travail (CDI, CDD, consultants)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Règlement intérieur et conformité légale
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Gestion des ruptures, licenciements & transactions
+              </li>
+            </ul>
+            <div class="service-footer-cta">
+              <a class="btn btn-outline-dark btn-sm" href="#devis">Consulter pour ce service</a>
+            </div>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                  </path>
+                </svg>
+              </div>
+              <span class="service-card-number">04</span>
+            </div>
+            <h3>Fiscalité des Entreprises</h3>
+            <p>Anticipez vos charges et obligations déclaratives pour travailler l'esprit tranquille.</p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Choix du régime d'imposition adéquat (IR, IS, Synthétique)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Assistance en cas de contrôle ou contentieux fiscal
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Orientation et conseils sur les exonérations légales
+              </li>
+            </ul>
+            <div class="service-footer-cta">
+              <a class="btn btn-outline-dark btn-sm" href="#devis">Consulter pour ce service</a>
+            </div>
+          </article>
+
+          <!-- Service 5 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </div>
+              <span class="service-card-number">05</span>
+            </div>
+            <h3>Visas & Immigration Professionnelle</h3>
+            <p>Facilitez le séjour, le travail et l'installation légale de vos collaborateurs expatriés.</p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Visa investisseur & visa travailleur expatrié
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Regroupement familial & permis de travail
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Cartes de résident & renouvellements officiels
+              </li>
+            </ul>
+            <div class="service-footer-cta">
+              <a class="btn btn-outline-dark btn-sm" href="#devis">Consulter pour ce service</a>
+            </div>
+          </article>
+
+          <!-- Service 6 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <span class="service-card-number">06</span>
+            </div>
+            <h3>Contentieux & Médiation Amiable</h3>
+            <p>Résolution intelligente des désaccords commerciaux avant le recours aux tribunaux.</p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Recouvrement amiable et judiciaire de créances
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Médiation entre associés et partenaires d'affaires
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Négociation d'accords transactionnels
+              </li>
+            </ul>
+            <div class="service-footer-cta">
+              <a class="btn btn-outline-dark btn-sm" href="#devis">Consulter pour ce service</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Méthodologie en 4 Étapes
+         ========================================================================== -->
+    <section class="section" id="methode">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill badge-pill-primary" style="margin-bottom: 12px;">Notre Méthode</div>
+          <h2 class="serif-font">Un parcours clair, rapide et sans mauvaise surprise</h2>
+          <p>Nous privilégions une approche pragmatique pour vous délivrer des résultats concrets.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-step-badge">1</div>
+            <h4>Diagnostic Initial</h4>
+            <p>Échange approfondi pour analyser la situation juridique de votre projet et identifier les points de
+              vigilance.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-badge">2</div>
+            <h4>Proposition & Devis</h4>
+            <p>Présentation d'une feuille de route détaillée avec calendrier prévisionnel et honoraires transparents.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-badge">3</div>
+            <h4>Réalisation & Dépôt</h4>
+            <p>Rédaction des actes, validation conjointe et accomplissement des formalités administratives.</p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-badge">4</div>
+            <h4>Suivi & Pérennisation</h4>
+            <p>Remise des documents officiels et veille continue pour sécuriser l'avenir de votre structure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Bannière CTA
+         ========================================================================== -->
+    <section class="cta-band">
+      <div class="container cta-band-content">
+        <div>
+          <div class="badge-pill badge-pill-light" style="margin-bottom: 12px;">Projet en cours ?</div>
+          <h2 class="serif-font">Besoin d'un accompagnement personnalisé ?</h2>
+          <p>Contactez nos juristes dès aujourd'hui pour obtenir une analyse préalable et un devis adapté à votre
+            budget.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a class="btn btn-gold btn-lg" href="#devis">
+            <span>Demander un devis immédiat</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a class="btn btn-whatsapp btn-lg" href="https://wa.me/261349305861" target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+            </svg>
+            <span>WhatsApp Direct</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Foire Aux Questions (FAQ)
+         ========================================================================== -->
+    <section class="section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header">
+          <div class="badge-pill badge-pill-primary" style="margin-bottom: 12px;">Questions Fréquentes</div>
+          <h2 class="serif-font">Tout ce que vous devez savoir</h2>
+          <p>Retrouvez les réponses à vos principales interrogations sur nos prestations.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <button class="faq-question" type="button">
+              <span>Combien de temps faut-il pour créer une société à Madagascar ?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Avec un dossier complet et l'appui de notre cabinet auprès de l'EDBM (Economic Development Board of
+              Madagascar), la création effective d'une société (SARL, SARLU, etc.) s'effectue généralement sous 3 à 5
+              jours ouvrés.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Pourquoi faire vérifier un terrain avant achat ?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              La situation foncière à Madagascar comporte des risques d'indivision, de doubles ventes ou de litiges
+              d'héritage. Nous effectuons une vérification approfondie auprès de la Conservation de la Propriété
+              Foncière (état de situation juridique, certificat juridique) avant tout engagement financier.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Pouvez-vous assister des investisseurs non-résidents ?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Absolument. Une part importante de notre clientèle réside à l'étranger (France, Europe, Océan Indien,
+              etc.). Nous gérons l'ensemble des formalités à distance avec des procurations légalisées et des points
+              réguliers par visioconférence et WhatsApp.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Comment sont fixés vos honoraires ?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Nos tarifs sont clairs, transparents et convenus au préalable dans une convention d'honoraires (au forfait
+              pour les formalités courantes ou au temps passé pour les missions complexes). Aucun frais surprise n'est
+              facturé.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section Contact & Formulaire de Devis
+         ========================================================================== -->
+    <section class="section" id="contact" style="background: #ffffff;">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <div class="badge-pill badge-pill-primary" style="margin-bottom: 12px;">Prendre Contact</div>
+            <h2 class="serif-font">Parlons de votre projet d'entreprise</h2>
+            <p class="contact-intro">
+              Que ce soit pour une constitution de société, un litige commercial ou une acquisition immobilière, notre
+              équipe est à votre écoute pour vous conseiller.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-card-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <small>Téléphone direct / WhatsApp</small>
+                  <div><a href="https://wa.me/261349305861" target="_blank" rel="noopener">034 93 058 61</a></div>
+                  <div><a href="https://wa.me/261383060058" target="_blank" rel="noopener">038 30 600 58</a></div>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <small>Courrier Électronique</small>
+                  <div><a href="mailto:contact@jcm.mg">contact@jcm.mg</a></div>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-item-content">
+                  <small>Adresse du Cabinet</small>
+                  <p>IVY 188 Bis, Ampangabe Anosipatrana<br>Antananarivo, Madagascar</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <a class="btn btn-whatsapp btn-sm" href="https://wa.me/261349305861" target="_blank" rel="noopener">
+                <span>Discuter sur WhatsApp</span>
+              </a>
+              <a class="btn btn-outline-dark btn-sm" href="tel:+261349305861">
+                <span>Appeler le cabinet</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Formulaire de Devis -->
+          <div class="form-card" id="devis">
+            <div class="form-header">
+              <div class="badge-pill badge-pill-primary" style="margin-bottom: 8px;">Devis Sans Engagement</div>
+              <h3 class="serif-font">Exposez-nous votre besoin</h3>
+              <p>Remplissez les informations ci-dessous. Nous vous répondrons sous 24h avec une estimation précise.</p>
+            </div>
+
+            <form id="quoteForm">
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="name">Nom et Prénom *</label>
+                  <input class="form-control" id="name" name="name" type="text" placeholder="Ex: Jean Rakoto" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Téléphone / WhatsApp *</label>
+                  <input class="form-control" id="phone" name="phone" type="tel" placeholder="Ex: 034 00 000 00"
+                    required>
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="email">Adresse E-mail *</label>
+                  <input class="form-control" id="email" name="email" type="email" placeholder="votre.email@exemple.com"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="service">Domaine d'intervention *</label>
+                  <select class="form-control" id="service" name="service" required>
+                    <option value="">Sélectionnez une option</option>
+                    <option value="Droit des affaires & création d'entreprise">Droit des affaires & Création
+                      d'entreprise</option>
+                    <option value="Droit foncier & immobilier">Droit foncier & Immobilier</option>
+                    <option value="Droit social & Ressources Humaines">Droit social & Gestion RH</option>
+                    <option value="Fiscalité & déclarations">Fiscalité & Déclarations</option>
+                    <option value="Visas & immigration">Visas & Immigration</option>
+                    <option value="Contentieux & médiation">Contentieux & Médiation</option>
+                    <option value="Autre demande juridique">Autre demande spécifique</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Description de votre situation ou projet *</label>
+                <textarea class="form-control" id="message" name="message" rows="4"
+                  placeholder="Précisez votre activité, le calendrier envisagé ou vos questions particulières..."
+                  required></textarea>
+              </div>
+
+              <button class="btn btn-primary form-submit-btn" type="submit">
+                <span>Envoyer ma demande de devis</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+
+              <div class="form-status" id="formStatus"></div>
+
+              <p class="form-notice">
+                🔒 Vos informations sont confidentielles et ne seront jamais transmises à des tiers.
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- ==========================================================================
+       Pied de Page (Footer)
+       ========================================================================== -->
   <footer class="footer">
-    <div class="container footer-main">
-      <a class="brand brand-footer" href="#accueil"><span class="brand-mark">JCM</span><span class="brand-text"><strong>JCM</strong><small>CABINET JURIDIQUE</small></span></a>
-      <p>Votre partenaire juridique à Madagascar.</p>
-      <a class="footer-top" href="#accueil">Retour en haut ↑</a>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-wrapper">
+            <div class="brand-symbol">JCM</div>
+            <div class="brand-info">
+              <span class="brand-title">JCM</span>
+              <span class="brand-subtitle">Cabinet Juridique</span>
+            </div>
+          </div>
+          <p class="footer-text">
+            Cabinet conseil juridique basé à Madagascar, dédié aux entreprises, investisseurs et particuliers désireux
+            de bâtir sur un socle juridique inattaquable.
+          </p>
+          <div style="display: flex; gap: 10px;">
+            <a class="btn btn-outline-white btn-sm" href="https://wa.me/261349305861" target="_blank"
+              rel="noopener">WhatsApp</a>
+            <a class="btn btn-outline-white btn-sm" href="mailto:contact@jcm.mg">Email</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Expertises</h4>
+          <div class="footer-links">
+            <a href="#services">Droit des Sociétés</a>
+            <a href="#services">Droit Foncier & Baux</a>
+            <a href="#services">Droit du Travail & RH</a>
+            <a href="#services">Conseil Fiscal</a>
+            <a href="#services">Visas Professionnels</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À Propos de JCM</a>
+            <a href="#services">Nos Services</a>
+            <a href="#methode">Notre Méthode</a>
+            <a href="#faq">Questions Fréquentes</a>
+            <a href="#contact">Prendre Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Coordonnées</h4>
+          <div class="footer-links">
+            <span style="color: #cbd5e1; font-size: 13px;">IVY 188 Bis, Ampangabe Anosipatrana<br>Antananarivo,
+              Madagascar</span>
+            <a href="tel:+261349305861">Tél : +261 34 93 058 61</a>
+            <a href="tel:+261383060058">Tél : +261 38 30 600 58</a>
+            <a href="mailto:contact@jcm.mg">contact@jcm.mg</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="currentYear"></span> JCM - Juriste Conseil Mada. Tous droits réservés.
+        </div>
+        <a class="back-to-top" href="#accueil">
+          <span>Haut de page</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
     </div>
-    <div class="footer-bottom"><div class="container"><span>© <span id="year"></span> JCM — Tous droits réservés.</span><span>Cabinet juridique à Madagascar</span></div></div>
   </footer>
+
+  <!-- ==========================================================================
+       Bouton WhatsApp Flottant Rapide
+       ========================================================================== -->
+  <a class="floating-whatsapp" href="https://wa.me/261349305861" target="_blank" rel="noopener noreferrer"
+    aria-label="Discuter directement sur WhatsApp avec le cabinet">
+    <div class="online-dot"></div>
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+    </svg>
+    <span>Conseil WhatsApp Direct</span>
+  </a>
+
+  <!-- Script interactif -->
   <script src="script.js"></script>
 </body>
+
 </html>
