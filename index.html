@@ -12,7 +12,9 @@
   <!-- Police Poppins Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -65,11 +67,7 @@
   <header class="site-header" id="header">
     <div class="container nav-container">
       <a class="brand-wrapper" href="#accueil" aria-label="Accueil JCM">
-        <div class="brand-symbol">JCM</div>
-        <div class="brand-info">
-          <span class="brand-title">JCM</span>
-          <span class="brand-subtitle">Cabinet Juridique</span>
-        </div>
+        <img src="assets/logo-jcm.png" alt="JCM - Juriste Conseil Mada" class="brand-logo-img">
       </a>
 
       <nav class="main-nav" id="mainNav">
@@ -100,14 +98,14 @@
 
   <main>
     <!-- ==========================================================================
-         Hero Section
+         Hero Section (Centré & Épuré)
          ========================================================================== -->
     <section class="hero" id="accueil">
       <div class="hero-glow-1"></div>
       <div class="hero-glow-2"></div>
 
-      <div class="container hero-grid">
-        <div class="hero-content">
+      <div class="container">
+        <div class="hero-center-wrap">
           <div class="badge-pill badge-pill-light">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
               <polygon
@@ -167,25 +165,22 @@
               <span>Confidentialité totale</span>
             </div>
           </div>
-        </div>
 
-        <div class="hero-visual">
-          <div class="hero-visual-card">
-            <div class="hero-logo-frame">
-              <img src="assets/logo-juriste-conseil-mada.png" alt="Juriste Conseil Mada Logo" class="hero-logo-img">
+          <!-- Indicateurs Clés Centrés -->
+          <div class="hero-stats-strip">
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">500+</span>
+              <span class="hero-stat-label">Dossiers traités<br>avec succès</span>
             </div>
-            <p style="font-size: 13px; font-weight: 600; color: #f1d5db; letter-spacing: 0.04em;">
-              CABINET JURIDIQUE DE RÉFÉRENCE
-            </p>
-            <div class="hero-card-stats">
-              <div class="stat-box">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">Dossiers traités</div>
-              </div>
-              <div class="stat-box">
-                <div class="stat-number">98%</div>
-                <div class="stat-label">Clients satisfaits</div>
-              </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">98%</span>
+              <span class="hero-stat-label">Taux de<br>satisfaction</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">10+</span>
+              <span class="hero-stat-label">Années d'expertise<br>à Madagascar</span>
             </div>
           </div>
         </div>
@@ -827,20 +822,12 @@
               </div>
             </div>
 
-            <div style="display: flex; gap: 12px; align-items: center;">
-              <a class="btn btn-whatsapp btn-sm" href="https://wa.me/261349305861" target="_blank" rel="noopener">
-                <span>Discuter sur WhatsApp</span>
-              </a>
-              <a class="btn btn-outline-dark btn-sm" href="tel:+261349305861">
-                <span>Appeler le cabinet</span>
-              </a>
-            </div>
+
           </div>
 
           <!-- Formulaire de Devis -->
           <div class="form-card" id="devis">
             <div class="form-header">
-              <div class="badge-pill badge-pill-primary" style="margin-bottom: 8px;">Devis Sans Engagement</div>
               <h3 class="serif-font">Exposez-nous votre besoin</h3>
               <p>Remplissez les informations ci-dessous. Nous vous répondrons sous 24h avec une estimation précise.</p>
             </div>
@@ -915,13 +902,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="brand-wrapper">
-            <div class="brand-symbol">JCM</div>
-            <div class="brand-info">
-              <span class="brand-title">JCM</span>
-              <span class="brand-subtitle">Cabinet Juridique</span>
-            </div>
-          </div>
+          <a class="brand-wrapper" href="#accueil" aria-label="Accueil JCM">
+            <img src="assets/logo-jcm.png" alt="JCM - Juriste Conseil Mada" class="brand-logo-img brand-logo-footer">
+          </a>
           <p class="footer-text">
             Cabinet conseil juridique basé à Madagascar, dédié aux entreprises, investisseurs et particuliers désireux
             de bâtir sur un socle juridique inattaquable.
