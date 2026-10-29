@@ -1,0 +1,17 @@
+SITE VITRINE JCM — CABINET JURIDIQUE
+
+Contenu :
+- index.html : page du site
+- style.css : design responsive rouge, blanc et doré
+- script.js : menu mobile et formulaire de demande de devis (ouvre le logiciel e-mail)
+- assets/logo-juriste-conseil-mada.png : logo fourni
+
+Pour prévisualiser :
+1. Décompressez le dossier.
+2. Ouvrez index.html dans votre navigateur.
+
+À personnaliser avant publication :
+- Remplacer les liens génériques Facebook et LinkedIn par les pages officielles de JCM.
+- Vérifier le nom commercial exact et le texte du logo : le logo fourni affiche « Juriste Conseil Mada », tandis que le site utilise « JCM ».
+- Le formulaire de devis ouvre l’application e-mail du visiteur ; il n’enregistre pas les demandes dans une base de données.
+- Pour publier le site, téléversez le contenu du dossier sur un hébergeur web.
